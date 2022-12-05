@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "test": "nightwatch"
+  },
   "devDependencies": {
+    "chromedriver": "^108.0.0",
     "nightwatch": "^2.5.3"
   }
 }
