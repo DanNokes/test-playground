@@ -13,7 +13,6 @@ jobs:
       - run: yarn install
       - name: Browserstack E2E tests
         run: |
-          cp .env.dev .env
           yarn test
         # env:
         #   BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
