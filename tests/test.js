@@ -7,7 +7,7 @@ describe('Ecosia', function() {
         .url('https://www.ecosia.org/')
         .setValue('input[type=search]', 'nightwatch')
         .click('button[type=submit]')
-        .assert.containsText('.mainline.web__mainline', 'Nightwatch.js')
+        .assert.textContains('.mainline.web__mainline', 'Nightwatch.js')
         .end();
     });
   });
