@@ -1,0 +1,21 @@
+name: test-action
+
+on: [push]
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - run: yarn install
+      - name: Browserstack E2E tests
+        run: |
+          cp .env.dev .env
+          yarn test
+        # env:
+        #   BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+        #   BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+
