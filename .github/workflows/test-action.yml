@@ -1,6 +1,8 @@
 name: test-action
 
-on: [push]
+on: 
+  workflow_dispatch:
+  [push]
 
 jobs:
   test-action:
@@ -11,10 +13,9 @@ jobs:
         with:
           node-version: 18.x
       - run: yarn install
-      - name: Browserstack E2E tests
+      - name: test-action
         run: |
           yarn test
         # env:
         #   BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
         #   BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-
