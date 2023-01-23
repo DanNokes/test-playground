@@ -1,9 +1,12 @@
 {
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:cucumber": "nightwatch -c nightwatch-cucumber.conf.js"
   },
   "devDependencies": {
-    "chromedriver": "^108.0.0",
-    "nightwatch": "^2.5.3"
-  }
+    "@cucumber/cucumber": "^8.10.0",
+    "chromedriver": "^109.0.0",
+    "nightwatch": "^2.6.10"
+  },
+  "dependencies": {}
 }
