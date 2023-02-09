@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch --env browserstack",
+    "test:cucumber": "nightwatch -c nightwatch.cucumber.conf.js"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^8.10.0",
     "chromedriver": "^108.0.0",
     "nightwatch": "^2.5.3"
   }
