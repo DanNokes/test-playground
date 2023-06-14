@@ -3,12 +3,16 @@
     "test": "nightwatch",
     "test:browserstack": "nightwatch --env browserstack",
     "test:cucumber": "nightwatch -c nightwatch.cucumber.conf.js",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:browserstack": "browserstack-cypress run"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.10.0",
     "chromedriver": "^112.0.0",
     "cypress": "^12.14.0",
     "nightwatch": "^2.5.3"
+  },
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.22.1"
   }
 }
