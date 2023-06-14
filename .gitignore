@@ -1,5 +1,8 @@
 node_modules
+log
 logs
+npm_install_debug.log
+results
 tests_output
 .env
 .DS_Store

@@ -15,7 +15,7 @@ describe('LMN to cart', () => {
     cy.get('[data-hook="canvas-drawer-cover_style-2-label"]').click()
     cy.get('label[for="cover-i"]').click()
     cy.get('[data-hook="canvas-drawer-inscription-3-label"]').click()
-    cy.get('.Button__text').click()
+    cy.get('.inscription-cta-container .Button').click()
     cy.get('.canvas-drawers-button .Button').click()
 
     cy.url().should('include', '/personalized-products/lost-my-name-v2-book/formats')
